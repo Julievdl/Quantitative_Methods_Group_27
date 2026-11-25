@@ -1,0 +1,10 @@
+import numpy as np
+geo_data = np.loadtxt("geo_data.txt")
+geo_data_large = np.loadtxt("geo_data_large.txt")
+range_data_1 = np.loadtxt("range_data.txt", dtype=np.str_, usecols=0)
+range_data_2 = np.loadtxt("range_data.txt", usecols=1)
+range_data = np.transpose(np.array([range_data_1,range_data_2]))
+print(geo_data)
+print(geo_data_large)
+print(range_data_1)
+print(range_data)
